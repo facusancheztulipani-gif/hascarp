@@ -1,0 +1,486 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>HAS CARP LLC</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+  /* Layout: a registry document — masthead with the filing facts, sticky index, one reading column of policy sections. */
+  :root {
+    --bg: #f6f7f8;
+    --surface: #ffffff;
+    --ink: #16191e;
+    --muted: #5c6672;
+    --rule: #dfe4e9;
+    --accent: #1f4f7a;
+    --accent-soft: #eaf0f6;
+    --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1217;
+      --surface: #171b21;
+      --ink: #e7eaee;
+      --muted: #9ba5b1;
+      --rule: #272d35;
+      --accent: #85b3e4;
+      --accent-soft: #1b2733;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1217;
+    --surface: #171b21;
+    --ink: #e7eaee;
+    --muted: #9ba5b1;
+    --rule: #272d35;
+    --accent: #85b3e4;
+    --accent-soft: #1b2733;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  * { box-sizing: border-box; }
+
+  .wrap {
+    max-width: 920px;
+    margin: 0 auto;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+
+  /* ---- masthead ---- */
+  .masthead { background: var(--surface); border-bottom: 1px solid var(--rule); }
+  .masthead .wrap { padding-block: 40px 28px; }
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 14px;
+  }
+  h1 {
+    font-family: var(--font-display);
+    font-size: clamp(34px, 6vw, 52px);
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+  .standfirst {
+    font-family: var(--font-display);
+    font-size: clamp(17px, 2.4vw, 21px);
+    line-height: 1.45;
+    color: var(--muted);
+    max-width: 58ch;
+    margin: 0 0 28px;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .fact { background: var(--surface); padding: 14px 16px; min-width: 0; }
+  .fact dt {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 5px;
+  }
+  .fact dd {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-variant-numeric: tabular-nums;
+    word-break: break-word;
+  }
+
+  /* ---- index ---- */
+  .index { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); border-bottom: 1px solid var(--rule); }
+  body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+  .index .wrap { padding-block: 10px; display: flex; flex-wrap: wrap; gap: 6px 18px; }
+  .index a {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    padding: 3px 0;
+    border-bottom: 1px solid transparent;
+  }
+  .index a:hover, .index a:focus-visible { color: var(--accent); border-bottom-color: var(--accent); }
+
+  /* ---- sections ---- */
+  main .wrap { padding-block: 8px 0; }
+  section { padding-block: 34px; border-bottom: 1px solid var(--rule); scroll-margin-top: 70px; }
+  section:last-of-type { border-bottom: 0; }
+  h2 {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 3.4vw, 28px);
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 26px 0 6px;
+    letter-spacing: -0.005em;
+  }
+  .lede { color: var(--muted); max-width: 68ch; margin: 0 0 18px; }
+  p, li { max-width: 72ch; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 20px; }
+  li { margin-bottom: 7px; }
+  a { color: var(--accent); }
+  strong { font-weight: 600; }
+  .note {
+    border-left: 2px solid var(--accent);
+    background: var(--accent-soft);
+    padding: 12px 16px;
+    margin: 0 0 16px;
+    max-width: 72ch;
+  }
+  .note p:last-child { margin-bottom: 0; }
+
+  /* ---- catalogue table ---- */
+  .scroller { overflow-x: auto; border: 1px solid var(--rule); background: var(--surface); margin-bottom: 18px; }
+  table { border-collapse: collapse; width: 100%; min-width: 660px; font-size: 14px; }
+  caption {
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 12px 16px 0;
+  }
+  th, td { text-align: left; padding: 10px 16px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  thead th {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  tbody tr:last-child td { border-bottom: 0; }
+  td.site { font-family: var(--font-mono); font-size: 13px; }
+  td.cur { font-family: var(--font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .brand { font-weight: 600; display: block; }
+  .brand-sub { color: var(--muted); font-size: 13px; }
+
+  /* ---- registration block ---- */
+  .registry { background: var(--surface); border: 1px solid var(--rule); }
+  .registry dl { display: grid; grid-template-columns: minmax(170px, 230px) 1fr; margin: 0; }
+  .registry dt, .registry dd { padding: 11px 16px; border-bottom: 1px solid var(--rule); margin: 0; min-width: 0; }
+  .registry dt {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .registry dd { font-family: var(--font-mono); font-size: 14px; font-variant-numeric: tabular-nums; word-break: break-word; }
+  .registry dl > :nth-last-child(-n+2) { border-bottom: 0; }
+  @media (max-width: 560px) {
+    .registry dl { grid-template-columns: 1fr; }
+    .registry dt { border-bottom: 0; padding-bottom: 0; }
+  }
+
+  /* ---- contact + payment chips ---- */
+  .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-bottom: 18px; }
+  .card { background: var(--surface); border: 1px solid var(--rule); padding: 16px; min-width: 0; }
+  .card h3 { margin-top: 0; }
+  .card .val { font-family: var(--font-mono); font-size: 14px; word-break: break-word; }
+  .card .val a { text-decoration: none; border-bottom: 1px solid currentColor; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 16px; padding: 0; list-style: none; }
+  .chips li {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    border: 1px solid var(--rule);
+    background: var(--surface);
+    padding: 6px 11px;
+    margin: 0;
+  }
+
+  footer { background: var(--surface); border-top: 1px solid var(--rule); }
+  footer .wrap { padding-block: 22px 30px; }
+  footer p { font-size: 13px; color: var(--muted); margin: 0 0 6px; max-width: 72ch; }
+  footer .legal { font-family: var(--font-mono); font-size: 12px; }
+
+  @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  html { scroll-behavior: smooth; }
+</style>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="eyebrow">Official business website</p>
+    <h1>HAS CARP LLC</h1>
+    <p class="standfirst">A digital publishing company. We write and sell downloadable books and video courses that teach home food crafts and creative skills, in eight languages across Europe, Australia and New Zealand.</p>
+    <dl class="facts">
+      <div class="fact"><dt>Formed in</dt><dd>Wyoming, USA</dd></div>
+      <div class="fact"><dt>EIN</dt><dd>43-2590015</dd></div>
+      <div class="fact"><dt>Business address</dt><dd>1057 NW 136th Ave<br>Miami, FL 33182</dd></div>
+      <div class="fact"><dt>Customer service</dt><dd>support@hascarp.shop</dd></div>
+    </dl>
+  </div>
+</header>
+
+<nav class="index" aria-label="Sections">
+  <div class="wrap">
+    <a href="#business">The business</a>
+    <a href="#catalogue">What we sell</a>
+    <a href="#prices">Prices &amp; currencies</a>
+    <a href="#delivery">Delivery</a>
+    <a href="#refunds">Refunds</a>
+    <a href="#privacy">Privacy</a>
+    <a href="#terms">Terms</a>
+    <a href="#payments">Payments &amp; security</a>
+    <a href="#contact">Contact</a>
+    <a href="#registration">Company details</a>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap">
+
+    <section id="business">
+      <h2>The business</h2>
+      <p class="lede">One sentence for the reviewer: we sell our own instructional PDFs and video lessons, each a one-time purchase, delivered by download and email within a minute of payment. Nothing is shipped and nothing recurs.</p>
+      <p>HAS CARP LLC writes, produces and publishes instructional material for people who want to learn a hands-on craft at home. Each title is written for one subject and one language market, and is sold directly on the brand's own website, listed under <a href="#catalogue">What we sell</a>.</p>
+      <p>A typical purchase is a PDF book of 40 or more step-by-step recipes or exercises, with printable reference charts and a set of bonus titles included. Some titles add video lessons. The buyer pays once, downloads the files immediately, and keeps them. There is no membership, no subscription, no auto-renewal, and no physical shipment at any price point.</p>
+      <p>We publish in German, French, English, Spanish, Italian, Dutch, Slovak and Czech. Buyers are consumers, mostly between 35 and 70, who find a title through social media advertising and buy on the same visit. All customer-facing text, support and refunds are handled in the buyer's own language.</p>
+    </section>
+
+    <section id="catalogue">
+      <h2>What we sell</h2>
+      <p class="lede">Eleven storefronts, three product categories. Every title is a digital download. This list is the complete catalogue; each new title is added here on the day it goes on sale.</p>
+
+      <h3>Home charcuterie and sausage making</h3>
+      <p>Books that teach curing, smoking and sausage making in a home kitchen: salt and nitrite ratios by weight, fermentation temperatures and times, casing handling, and regional recipes. Sold as a main title with bonus volumes on pickling, cold cuts and regional specialities.</p>
+      <div class="scroller">
+        <table>
+          <caption>Charcuterie storefronts</caption>
+          <thead><tr><th scope="col">Brand</th><th scope="col">Website</th><th scope="col">Language / market</th><th scope="col">Format</th><th scope="col">Currency</th></tr></thead>
+          <tbody>
+            <tr><td><span class="brand">Klaus Fleischer – Wurstmacher</span><span class="brand-sub">Die Deutsche Wurstschule</span></td><td class="site">klausfleischerwurstmacher.shop</td><td>German — Germany, Austria, Switzerland</td><td>PDF book + 10 bonus volumes</td><td class="cur">EUR</td></tr>
+            <tr><td><span class="brand">L'École de la Charcuterie</span><span class="brand-sub">Enzo Vitale</span></td><td class="site">enzovitale.store</td><td>French — France, Belgium</td><td>PDF book + bonus volumes</td><td class="cur">EUR</td></tr>
+            <tr><td><span class="brand">Rocco Charcuterie</span><span class="brand-sub">Home Charcuterie School</span></td><td class="site">roccocharcuterie.store</td><td>English — Australia, New Zealand</td><td>PDF book + bonus volumes</td><td class="cur">USD</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Home bread baking, including gluten-free</h3>
+      <p>Books that teach bread baking as a repeatable process rather than by feel: hydration and binder tables, proofing times by room temperature, oven and bread-machine settings, and more than 40 step-by-step recipes per title. The gluten-free titles are built around a binder ratio table for people who cannot eat wheat.</p>
+      <div class="scroller">
+        <table>
+          <caption>Bread baking storefronts</caption>
+          <thead><tr><th scope="col">Brand</th><th scope="col">Website</th><th scope="col">Language / market</th><th scope="col">Format</th><th scope="col">Currency</th></tr></thead>
+          <tbody>
+            <tr><td><span class="brand">Die Brotschule</span><span class="brand-sub">Lena Brandt</span></td><td class="site">lenabrandt.shop</td><td>German — Germany, Austria</td><td>PDF book + 10 bonus volumes</td><td class="cur">EUR</td></tr>
+            <tr><td><span class="brand">La Escuela del Pan</span><span class="brand-sub">Nuria Sendra</span></td><td class="site">nuriahornea.shop</td><td>Spanish — Spain</td><td>PDF book + 10 bonus volumes</td><td class="cur">USD</td></tr>
+            <tr><td><span class="brand">Scuola del Pane</span><span class="brand-sub">Daniela Bertozzi</span></td><td class="site">danielafailpane.store</td><td>Italian — Italy</td><td>PDF book + 10 bonus volumes</td><td class="cur">EUR</td></tr>
+            <tr><td><span class="brand">De Broodschool</span><span class="brand-sub">Femke Brouwer</span></td><td class="site">femkebrouwer.store</td><td>Dutch — Netherlands</td><td>PDF book + 10 bonus volumes</td><td class="cur">EUR</td></tr>
+            <tr><td><span class="brand">Škola chleba</span><span class="brand-sub">Katarína pečie</span></td><td class="site">katarinapecie.shop</td><td>Slovak — Slovakia</td><td>PDF book + 10 bonus volumes</td><td class="cur">EUR / USD</td></tr>
+            <tr><td><span class="brand">Škola Chleba</span><span class="brand-sub">Pekárna Terezy Malé</span></td><td class="site">pekarnaterezymale.shop</td><td>Czech — Czechia</td><td>PDF book + 10 bonus volumes</td><td class="cur">CZK</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Pencil drawing instruction</h3>
+      <p>A drawing method for adult beginners that teaches the nose, mouth and ear in reverse order, without outlines: 48 practice plates, a self-diagnosis exercise on a portrait the reader already has, and graded sessions.</p>
+      <div class="scroller">
+        <table>
+          <caption>Drawing storefronts</caption>
+          <thead><tr><th scope="col">Brand</th><th scope="col">Website</th><th scope="col">Language / market</th><th scope="col">Format</th><th scope="col">Currency</th></tr></thead>
+          <tbody>
+            <tr><td><span class="brand">Las Tres Piezas</span><span class="brand-sub">Escuela de Dibujo a Lápiz</span></td><td class="site">julianadibuja.shop<br>lauradibuja.shop</td><td>Spanish — Spain and Latin America</td><td>PDF book, 48 plates + bonus volumes</td><td class="cur">EUR / USD</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="prices">
+      <h2>Prices and currencies</h2>
+      <p class="lede">Every price on every storefront is shown with its currency written out next to the figure, and that figure is what the card is charged.</p>
+      <ul>
+        <li><strong>Price range.</strong> Single titles run from EUR 9.99 to EUR 31.99, and bundles of a main title with its bonus volumes up to EUR 63.98. In US dollars, single titles run from USD 18.49 to USD 22.47 and bundles to USD 44.94. The Czech storefront prices in Czech koruna, from CZK 149 to CZK 329.</li>
+        <li><strong>Currency per market.</strong> Each storefront charges in one currency, listed in the tables above. The buyer sees that currency, with the three-letter code or the local symbol, before paying and on the confirmation page.</li>
+        <li><strong>Taxes.</strong> European prices are shown VAT inclusive. The buyer is never charged more than the figure displayed.</li>
+        <li><strong>One-time payment.</strong> Every price is a single charge for permanent access. We do not run subscriptions, trials, free-to-paid conversions, or any charge after the first one.</li>
+        <li><strong>Promotional pricing.</strong> Launch and half-price promotions run for a limited period and are shown as the promotional price next to the struck-through regular price. The promotional price is what is charged. Bonus volumes advertised as included are delivered with the main title at no extra cost, and the offer terms sit next to the buy button.</li>
+      </ul>
+    </section>
+
+    <section id="delivery">
+      <h2>Delivery</h2>
+      <p class="lede">Digital delivery only. Nothing is posted, so there are no shipping charges, no delivery addresses and no carriers.</p>
+      <ul>
+        <li><strong>When.</strong> Access is granted as soon as the payment is authorised, normally within one minute.</li>
+        <li><strong>How.</strong> Two ways, both automatic: a download link on the order confirmation page, and an email to the address given at checkout containing the same links. Bonus volumes arrive in the same email as the main title.</li>
+        <li><strong>What arrives.</strong> PDF files, readable on a phone, tablet or computer, plus video lessons on the titles that include them. Files may be downloaded again at any time from the links in the confirmation email.</li>
+        <li><strong>Access period.</strong> Permanent. Access does not expire and is not revoked.</li>
+        <li><strong>If it does not arrive.</strong> Email support@hascarp.shop with the email address used at checkout and we resend the files directly, usually the same day. The most common cause is the confirmation email sitting in a promotions or spam folder, or a typo in the address at checkout; both are fixed by a resend.</li>
+      </ul>
+    </section>
+
+    <section id="refunds">
+      <h2>Refunds and cancellations</h2>
+      <p class="lede">Every title carries a money-back guarantee. We refund on request, without asking the buyer to justify it.</p>
+      <h3>Guarantee period</h3>
+      <ul>
+        <li><strong>Bread baking titles: 60 days</strong> from purchase.</li>
+        <li><strong>Drawing titles: 30 days</strong> from purchase.</li>
+        <li><strong>Charcuterie titles: at least 14 days</strong> from purchase; the exact period is stated on the product page and in the confirmation email.</li>
+      </ul>
+      <h3>How to request one</h3>
+      <p>Email support@hascarp.shop from the address used at checkout, or reply to the confirmation email, and write that you want a refund. No form, no phone call and no reason required. We reply within one business day and process the refund to the original payment method; the bank then takes five to ten business days to show it.</p>
+      <h3>Cancellations</h3>
+      <p>There is nothing to cancel. All purchases are one-time payments, there are no subscriptions or recurring charges, and no payment instrument is stored for future use.</p>
+      <h3>Returns</h3>
+      <p>No goods are shipped, so there is no return process. A refund closes the matter; the buyer keeps the downloaded files.</p>
+      <h3>Disputes</h3>
+      <p>If a charge looks unfamiliar, email support@hascarp.shop before contacting the bank: the charge descriptor shows the storefront's brand name, which is not always the name the buyer remembers. We would rather refund directly than have a buyer wait for a dispute to resolve.</p>
+    </section>
+
+    <section id="privacy">
+      <h2>Privacy policy</h2>
+      <p class="lede">We collect what an order needs and what the storefront needs to work. We do not sell personal data, and we never see or store card numbers.</p>
+      <h3>What we collect</h3>
+      <ul>
+        <li><strong>Order data:</strong> name, email address, country, the titles purchased, the amount and currency paid, and the time of the order.</li>
+        <li><strong>Payment data:</strong> entered on the payment provider's own hosted form. We receive confirmation of the result, the card brand and the last four digits. The full card number never reaches our systems.</li>
+        <li><strong>Site data:</strong> IP address, device and browser type, pages viewed, and the advertisement a visit came from, through Meta Pixel and Microsoft Clarity. Used to measure advertising and to see where a page confuses people.</li>
+        <li><strong>Support data:</strong> the contents of emails sent to us.</li>
+      </ul>
+      <h3>Why, and on what basis</h3>
+      <p>Order and payment data are processed to perform the sales contract and to meet US tax and accounting obligations. Site analytics and advertising measurement are processed with consent where consent is required, which EU and UK visitors give or refuse in the cookie banner on each storefront. Support data is processed on our legitimate interest in answering the customer.</p>
+      <h3>Who else processes it</h3>
+      <p>Our payment providers, our email delivery provider, our storefront and hosting provider, and the analytics providers named above. Each receives only the data it needs to perform its function, and none is permitted to use it for its own purposes.</p>
+      <h3>How long we keep it</h3>
+      <p>Order records for seven years, as US tax rules require. Support email for two years. Analytics data for the retention period of the provider, which does not exceed 25 months.</p>
+      <h3>Your rights</h3>
+      <p>You can ask for a copy of the data we hold about you, ask us to correct it, or ask us to delete it. Email support@hascarp.shop from the address on the order; we verify the request and answer within 30 days. We honour the rights given by the GDPR in the EU and UK, and by the CCPA in California, for every buyer wherever they live. Deletion does not remove the order record itself where tax law requires us to keep it.</p>
+      <h3>Children</h3>
+      <p>Our products are for adults. We do not knowingly sell to or collect data from anyone under 18.</p>
+    </section>
+
+    <section id="terms">
+      <h2>Terms of sale</h2>
+      <p class="lede">The agreement between HAS CARP LLC and the buyer of any title listed above.</p>
+      <ul>
+        <li><strong>What you buy.</strong> A personal, non-transferable licence to read and use the files for your own learning, for as long as you like. The files remain our copyright.</li>
+        <li><strong>What you may not do.</strong> Resell, republish, share publicly or distribute the files, in whole or in part, or claim the method as your own commercial product.</li>
+        <li><strong>Who may buy.</strong> Anyone aged 18 or over, paying with a card or account they are authorised to use.</li>
+        <li><strong>Immediate delivery and withdrawal.</strong> By completing the order the buyer asks for immediate access to the files and acknowledges that the statutory right of withdrawal for digital content is lost once delivery begins. Our own money-back guarantee, set out above, applies regardless and is more generous than the statutory minimum.</li>
+        <li><strong>Results.</strong> We teach a method and show the reference numbers behind it. We do not promise a particular outcome; a recipe followed badly is not a defect.</li>
+        <li><strong>Legal and export restrictions.</strong> The products are educational texts and videos. They contain no controlled technology, no regulated goods and no restricted content, and are not subject to export control. We do not sell into jurisdictions under comprehensive US sanctions.</li>
+        <li><strong>Pricing errors.</strong> If a price is displayed in error we will honour the displayed price for orders already placed, or refund in full where we cannot.</li>
+        <li><strong>Governing law.</strong> The laws of the State of Wyoming, United States, without prejudice to the mandatory consumer protections of the buyer's country of residence.</li>
+        <li><strong>Changes.</strong> These terms apply as published on the date of an order. Material changes are posted on this page with a new revision date.</li>
+      </ul>
+    </section>
+
+    <section id="payments">
+      <h2>Payments and security</h2>
+      <p class="lede">Card data is entered on the payment provider's hosted form, not on ours, and is handled under the PCI Data Security Standard.</p>
+      <ul>
+        <li><strong>Processing.</strong> Card payments are processed by PCI DSS Level 1 certified providers, including Stripe, Inc. Our storefronts receive the result of the authorisation, never the card number.</li>
+        <li><strong>Encryption.</strong> Every storefront and every checkout page is served over HTTPS with TLS, and HTTP requests are redirected to HTTPS.</li>
+        <li><strong>Authentication.</strong> European cards are authenticated with 3-D Secure where the issuer requires it. Administrative access to our storefronts and payment accounts requires two-factor authentication.</li>
+        <li><strong>Descriptor.</strong> The charge on a buyer's statement shows the storefront brand they bought from, so it can be recognised on the bill.</li>
+      </ul>
+      <h3>Payment methods accepted</h3>
+      <ul class="chips">
+        <li>Visa</li>
+        <li>Mastercard</li>
+        <li>American Express</li>
+        <li>Maestro</li>
+        <li>Apple&nbsp;Pay</li>
+        <li>Google&nbsp;Pay</li>
+        <li>PayPal</li>
+        <li>Local methods by market</li>
+      </ul>
+      <p>Local methods follow the market: iDEAL in the Netherlands, Bancontact in Belgium, BLIK in Poland, and bank transfer options where the storefront offers them.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Customer service</h2>
+      <p class="lede">Written support in the buyer's own language, answered by a person within one business day. We read every address below; none is a no-reply.</p>
+      <div class="contact-grid">
+        <div class="card">
+          <h3>Orders, files and refunds</h3>
+          <p class="val">support@hascarp.shop</p>
+          <p>Resends, refund requests, wrong email address at checkout, unrecognised charges.</p>
+        </div>
+        <div class="card">
+          <h3>Company and billing</h3>
+          <p class="val">contact@hascarp.shop</p>
+          <p>Invoices, VAT questions, legal notices, press and partnerships.</p>
+        </div>
+        <div class="card">
+          <h3>Postal address</h3>
+          <p class="val">HAS CARP LLC<br>1057 NW 136th Ave<br>Miami, FL 33182<br>United States</p>
+        </div>
+        <div class="card">
+          <h3>Hours and languages</h3>
+          <p>Monday to Friday, 09:00–18:00 Eastern Time. German, French, English, Spanish, Italian, Dutch, Slovak and Czech.</p>
+        </div>
+      </div>
+      <p>Each storefront also publishes its own support address in its footer, written in the language of that market. Both routes reach the same team.</p>
+    </section>
+
+    <section id="registration">
+      <h2>Company details</h2>
+      <p class="lede">As filed with the Wyoming Secretary of State and the Internal Revenue Service. These are the details to match against any document requested for verification.</p>
+      <div class="registry">
+        <dl>
+          <dt>Legal name</dt><dd>HAS CARP LLC</dd>
+          <dt>Entity type</dt><dd>Limited liability company, single member<br>(disregarded entity for US federal tax)</dd>
+          <dt>State of formation</dt><dd>Wyoming, United States</dd>
+          <dt>Date of formation</dt><dd>26 October 2026</dd>
+          <dt>Wyoming filing ID</dt><dd>2026-002115918</dd>
+          <dt>EIN</dt><dd>43-2590015</dd>
+          <dt>IRS name control</dt><dd>HASC</dd>
+          <dt>Managing member</dt><dd>Hector A. Sanchez (100%)</dd>
+          <dt>Principal office</dt><dd>1057 NW 136th Ave<br>Miami, FL 33182, United States</dd>
+          <dt>Registered agent</dt><dd>Registered Agents Inc<br>30 N Gould St, Ste R<br>Sheridan, WY 82801, United States</dd>
+          <dt>Business activity</dt><dd>Publishing of digital educational products<br>(downloadable books and video courses)</dd>
+          <dt>Website</dt><dd>hascarp.shop</dd>
+          <dt>Customer service</dt><dd>support@hascarp.shop</dd>
+        </dl>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="legal">HAS CARP LLC · 1057 NW 136th Ave, Miami, FL 33182, United States · EIN 43-2590015 · support@hascarp.shop</p>
+    <p>All prices are shown with their currency on each storefront. All products are digital downloads delivered by email; nothing is shipped.</p>
+    <p>This page is revised whenever a title or a storefront is added. Last revised 2 November 2026.</p>
+  </div>
+</footer>
+
+</body></html>
