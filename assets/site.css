@@ -198,3 +198,16 @@ footer a:hover { color: var(--amber); text-decoration: underline; }
   .foot-links { columns: 1; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .edition { transition: none; } }
+
+/* tablas del catálogo (vigía de la LLC, 23/11/2026) */
+.table-wrap { overflow-x: auto; margin-top: 26px; -webkit-overflow-scrolling: touch; }
+table.items { width: 100%; border-collapse: collapse; font-size: 14.5px; background: var(--paper); border: 1px solid var(--line); border-radius: 7px; }
+table.items th, table.items td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+table.items th { font-size: 12.5px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+table.items .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+table.items small { color: var(--muted); }
+table.items a { color: var(--clay-deep); }
+.prose table.items { margin: 8px 0 18px; }
+.was { text-decoration: line-through; color: var(--muted); font-weight: 400; }
+.fine-note { font-size: 13.5px; color: var(--muted); margin-top: 22px; }
+.edition-cover { aspect-ratio: 3/4; width: 100%; }
